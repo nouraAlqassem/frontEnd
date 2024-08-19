@@ -1,0 +1,170 @@
+h1 {
+    color: orange;
+    font-family: Garamond, serif;
+}
+
+ul {
+    display: grid;
+}
+
+li {
+    color: black;
+    padding: 5%;
+}
+
+p {
+    font-family: Garamond, serif;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: rgb(255, 153, 0);
+}
+
+.subscribe {
+    left: 0;
+    top: 20px;
+    padding: 0 20px;
+    position: absolute;
+}
+
+button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 15px;
+    grid-area: main;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+date {
+    font-size: small;
+    color: gray;
+}
+
+figure img {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0;
+}
+
+.card figcaption,
+.card date,
+.card p {
+    margin: 5px 0;
+}
+
+figcaption {
+    font-size: 1.5em;
+}
+
+figure img:hover {
+    box-shadow: 6px 6px 12px;
+}
+
+/* Blog post components */
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 1em;
+}
+
+.author-details h2 {
+    margin: 0 0 0.5em;
+}
+
+.author-details p {
+    margin: 0.2em 0;
+}
+
+.social-sharing a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: orange;
+}
+
+.blog-content h2 {
+    margin-top: 0;
+}
+
+.blog-content p {
+    line-height: 1.6;
+}
+
+blockquote {
+    padding: 1em;
+    margin: 1em0;
+    background-color: #e0e0e0;
+    border-left: 5px solid #333;
+    font-style: italic;
+    color: #666;
+}
+
+
+

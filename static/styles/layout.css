@@ -1,0 +1,73 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: 30px 250px;
+    grid-template-rows: 250px 700px;
+    grid-template-areas: 
+    "sd sd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft ft";
+}
+
+.box-grid {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+header {
+    background-color: rgb(158, 155, 155);
+    grid-area: hd;
+}
+
+.home-nav {
+    display: grid;
+    place-items: center;
+    grid-area: sd;
+    background-color: #e0dede;
+    padding: 10px;
+}
+
+footer {
+    grid-area: ft;
+    background-color: gray;
+}
+
+/* Multi-Device Web Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .home-grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+        grid-template-areas:
+            "hd"
+            "sd"
+            "main"
+            "ft";
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto; 
+        grid-template-areas:
+            "hd"
+            "main"
+            "ft";
+    }
+    
+    .home-nav {
+        grid-area: auto; 
+    }
+    
+    header, footer {
+        grid-area: auto; 
+    }
+    .subscribe {
+        position: static; 
+        padding: 10px; 
+    }
+}
+
